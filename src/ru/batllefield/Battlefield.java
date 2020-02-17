@@ -5,13 +5,19 @@ import ru.batllefield.units.Shooter;
 import ru.batllefield.units.Soldier;
 import ru.batllefield.units.Transport;
 
+/**
+ * Главный класс, содержащий метод main
+ */
 public class Battlefield {
 
     public static short sShootPower = 12;
     public static short sHealth = 50;
     public static  short sArmor = 2;
 
-
+    /**
+     * Главный метод приложения - точка входа (запуска).
+     * @param args аргументы, которые передаются при запуске приложения.
+     */
     public static void main(String[] args) {
         Soldier soldier1 = new Soldier(sShootPower, sHealth, sArmor);
         Soldier soldier2 = new Soldier(sShootPower, sHealth, sArmor);
